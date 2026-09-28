@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteRule ^students/?$ students.php [NC,L]
+
+RewriteRule ^students/([0-9]+)/?$ students.php?id=$1 [NC,L]
+
+RewriteRule ^cat_breeds/?$ cat_breeds.php [NC,L]
+
+RewriteRule ^cat_breeds/([0-9]+)/?$ cat_breeds.php?id=$1 [NC,L]
+
+SetEnvIf Authorization .+ HTTP_AUTHORIZATION=$0

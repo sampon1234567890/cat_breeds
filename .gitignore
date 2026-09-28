@@ -38,6 +38,10 @@ yarn-error.*
 
 example
 
+# machine-specific dev artifacts
+meowpedia-qr.png
+scripts/*.ps1
+
 # generated native folders
 /ios
 /android
